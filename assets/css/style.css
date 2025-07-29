@@ -1,0 +1,139 @@
+:root {
+  --seasalt: #f8f9fa;
+  --antiflash-white: #e9ecef;
+  --platinum: #dee2e6;
+  --french-gray: #ced4da;
+  --french-gray-2: #adb5bd;
+  --slate-gray: #6c757d;
+  --outer-space: #495057;
+  --onyx: #343a40;
+  --eerie-black: #212529;
+
+  --text-light: var(--slate-gray);
+  --text-dark: var(--eerie-black);
+  --background: var(--seasalt);
+  --primary: var(--onyx);
+  --secondary: var(--french-gray-2);
+  --accent: var(--outer-space);
+  font-size: 98%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--background);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--platinum);
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--antiflash-white);
+}
+
+.hero {
+  background-color: var(--antiflash-white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+}
+
+.about {
+  padding: 3rem 2rem;
+  background-color: var(--platinum);
+  text-align: center;
+}
+.projects {
+  padding: 3rem 2rem;
+  background-color: var(--french-gray);
+}
+
+.project-card {
+  background-color: white;
+  padding: 1rem;
+  border-left: 4px solid var(--primary);
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.project-card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  margin: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+}
+
+footer {
+  background-color: var(--onyx);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+  color: var(--platinum);
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: var(--antiflash-white);
+}
